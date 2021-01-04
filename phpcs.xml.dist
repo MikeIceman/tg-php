@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd">
+
+    <description>The coding standard of Iceman Telegram API</description>
+
+    <config name="ignore_warnings_on_exit" value="1" />
+    <config name="ignore_errors_on_exit" value="1" />
+
+    <arg name="basepath" value="."/>
+    <arg name="cache" value=".phpcs-cache"/>
+    <arg name="colors"/>
+    <arg name="extensions" value="php"/>
+
+    <rule ref="PSR2"/>
+
+    <file>src/</file>
+    <file>tests/</file>
+
+    <!-- Disable warning on minified js files -->
+    <rule ref="Internal.Tokenizer.Exception">
+        <exclude-pattern>*.min.js</exclude-pattern>
+    </rule>
+</ruleset>

@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "MikeIceman\\TelegramAPI\\": ""
+            "MikeIceman\\TelegramAPI\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MikeIceman\\TelegramAPI\\Tests\\": "tests/"
+            "MikeIceman\\TelegramAPI\\Tests\\": "tests"
         }
     },
     "replace": {
