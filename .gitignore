@@ -27,4 +27,5 @@
 ###> Local environment ###
 .idea
 /packages/
+/Example/*
 ###< Local environment ###
